@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Coding test MS result - Nahalingam</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<noscript>Sorry, your browser does not support JavaScript! Enabling it will make the buttons functioning.</noscript>
+		<p>
+		<div class="container" id="outerBox">
+			<table id="innerBox">
+				<tbody>
+					<tr>
+						<td id="b1">
+							&nbsp;</td>
+						<td id="b2">
+							<button type="button" id="btn-hor">Swap Horizontal</button></td>
+					</tr>
+					<tr>
+						<td id="b3">
+							<button type="button" id="btn-ver">Swap Vertical</button></td>
+						<td id="b4">
+							&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		&nbsp;</p>
+		<!-- defer javascript loading -->
+		<script type="text/javascript">
+		function loadJSfileOnload() {
+			var element = document.createElement("script");
+			element.src = "swapButton.js";
+			document.body.appendChild(element);
+		}
+		if (window.addEventListener)
+			window.addEventListener("load", loadJSfileOnload, false);
+		else if (window.attachEvent)
+			window.attachEvent("onload", loadJSfileOnload);
+		else window.onload = loadJSfileOnload;
+		</script>
+	</body>
+</html>
+
