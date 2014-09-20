@@ -1,0 +1,12 @@
+You can assume that the target browser is a mobile browser on iOS or Android.  You should not use any framework or library.
+ 
+1.  Reproduce the attached image in HTML and CSS.
+a)  The large square container has width and height properties of 399px, and has a subtle shadow.  The lines have RGB color of 176, 176, 176.
+b)  The styling on the two buttons should be set using the same CSS class.  The buttons have a uniform space to the right and left of the text, which results in different widths for the two buttons.  The height is fixed at 29px.  The text is centered vertically and horizontally in each button.  The font is Helvetica bold 14px.  The font RGB color is 85, 85, 85.  The buttons have rounded corners with 5-pixel radius.  And each button is centered in its respective square.
+ 
+2.  Write JavaScript code that will execute on load and support the following behavior:
+a) When I click on the "Swap Vertical" button, the two buttons swap vertical positions in 0.24 seconds.  (I.e., the bottom button moves up and the top button moves down, but both buttons retain their horizontal position.)
+b) When I click on the "Swap Horizontal" button, the two buttons swap horizontal positions in 0.24 seconds.
+c) The button animations should accelerate at the beginning, and should not decelerate at the end.
+d) The buttons should remain in the new positions until a button is pressed again.  Each button move to any of the four boxes.
+e) The animations should be implemented with CSS.
